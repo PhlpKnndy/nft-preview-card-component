@@ -33,9 +33,9 @@ The users should be able to:
 
 ### Links
 
-- **Solution URL -** [Frontend Mentor Solution](#)
+- **Solution URL -** [Frontend Mentor Solution](https://www.frontendmentor.io/solutions/nft-preview-card-component--a7705eHpL)
 
-- **Live Site URL -** [Live Site Preview (Vercel)](#)
+- **Live Site URL -** [Live Site Preview (Vercel)](https://nft-preview-card-component-phlpknndy.vercel.app)
 
 ## My Process
 
@@ -43,6 +43,7 @@ The users should be able to:
 
 - Semantic HTML5 markup
 - CSS custom properties
+- Flexbox
 
 ### What I Learned
 
