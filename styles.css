@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+:root {
+  --cyan-hover: hsla(178, 100%, 50%, 0.5);
+  --cyan: hsl(178, 100%, 50%);
+  --soft-blue: hsl(215, 51%, 70%);
+  --very-dark-blue-card: hsl(216, 50%, 16%);
+  --very-dark-blue-line: hsl(215, 32%, 27%);
+  --very-dark-blue-main: hsl(217, 54%, 11%);
+  --white: hsl(0, 0%, 100%);
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: var(--very-dark-blue-main);
+  color: var(--soft-blue);
+  font-family: "Outfit", sans-serif;
+}
+.Card {
+  background-color: var(--very-dark-blue-card);
+  border-radius: 15px;
+  box-shadow: 0 20px 30px hsla(216, 50%, 8%, 0.5),
+    0 15px 90px hsla(216, 50%, 8%, 0.25);
+  height: 600px;
+  margin: 150px auto;
+  max-width: 350px;
+}
+.Card__image {
+  cursor: pointer;
+  margin: 25px auto 10px;
+  padding: 0 25px;
+  position: relative;
+}
+.Card__image__main {
+  border-radius: 8px;
+  height: auto;
+  margin: 25px auto 10px;
+  max-width: 350px;
+  position: relative;
+  width: 100%;
+}
+.Card__image__overlay {
+  background-color: var(--cyan-hover);
+  border-radius: 8px;
+  height: 300px;
+  inset: 0;
+  margin: 25px 25px 0;
+  opacity: 0;
+  position: absolute;
+  transition: 0.3s ease;
+  width: 300px;
+}
+.Card__image:hover .Card__image__overlay {
+  opacity: 1;
+}
+.Card__image__overlay__icon {
+  -ms-transform: translate(-50%, -50%);
+  left: 50%;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.Card__title {
+  margin: 0 0 20px 25px;
+}
+.Card__title .Card__title__link {
+  color: var(--white);
+  font-size: 1.375rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+.Card__title .Card__title__link:hover {
+  color: var(--cyan);
+}
+.Card__description {
+  font-size: 1.125rem;
+  font-weight: 300;
+  margin: 0 25px 30px;
+}
+.Card__info {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 25px 25px;
+}
+.Card__info__column {
+  align-items: center;
+  display: flex;
+}
+.Card__info__column .Card__info__price,
+.Card__info__duration {
+  display: inline-block;
+  padding-left: 5px;
+}
+.Card__info__price {
+  color: var(--cyan);
+}
+.Card__creator {
+  align-items: center;
+  border-top: 1px solid var(--very-dark-blue-line);
+  display: flex;
+  justify-content: left;
+  margin: 0 25px;
+  padding: 15px 0;
+}
+.Card__creator__avatar {
+  border-radius: 50%;
+  border: 1px solid var(--white);
+  width: 30px;
+}
+.Card__creator__attribution {
+  font-size: 0.9375rem;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  padding-left: 15px;
+}
+.Card__creator__name {
+  color: var(--white);
+  text-decoration: none;
+}
+.Card__creator__name:hover {
+  color: var(--cyan);
+}
+.Card__footer {
+  color: var(--white);
+  font-size: 0.6875rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.Card__footer a {
+  color: var(--soft-blue);
+}
